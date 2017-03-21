@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.effect {
+display: block;
+
+
+}
+.effect li {
+    display: block;
+    background-color: blue;
+    width: 160px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.effect li:before {
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-color: red;
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translate(0,0);
+    transition: all 0.5s ease-in-out;
+}
+.effect li:hover:before {
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-color: red;
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translate(20%,0)
+}
